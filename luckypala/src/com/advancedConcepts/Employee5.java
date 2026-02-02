@@ -1,6 +1,6 @@
 package com.advancedConcepts;
 
-public class Employee5 {
+public class Employee5 implements Comparable<Employee5> {
 	private int eid;
 	private String ename;
 	private double esal;
@@ -60,5 +60,21 @@ public class Employee5 {
 
 	public void setPhone(long phone) {
 		this.phone = phone;
+	}
+
+//	@Override
+//	public int compareTo(Employee5 o) {
+//		return this.getEname().compareTo(o.getEname());
+//	}
+
+	@Override
+	public int compareTo(Employee5 o) {
+		if (this.getAge() < o.getAge()) {
+			return -1;
+		} else if (this.getAge() > o.getAge()) {
+			return 1;
+		} else {
+			return 0;
+		}
 	}
 }
