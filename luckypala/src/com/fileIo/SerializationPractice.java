@@ -32,6 +32,7 @@ public class SerializationPractice {
 
 		oos.writeObject(s);
 
+		// De-Serializtaion
 		FileInputStream fis = new FileInputStream("C:\\Users\\palal\\OneDrive\\Documents\\luckyPala\\java.ser");
 		ObjectInputStream ois = new ObjectInputStream(fis);
 
