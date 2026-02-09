@@ -12,10 +12,14 @@ public class MultiThreading01 {
 
 		m.show();
 
+		System.out.println("Name of the Thread : " + Thread.currentThread().getName());
+
 		System.out.println("Name of the Thread : " + Thread.currentThread());
+		
+		Thread.currentThread().setName("Hello Its My Thread");
 		System.out.println("Name of the Thread : " + Thread.currentThread().getName());
 
 		System.out.println("main method ended");
-		
+
 	}
 }
