@@ -17,6 +17,7 @@ public class AnagramCheck {
 			map.put(c, map.getOrDefault(c, 0) + 1);
 
 		for (char c : s2.toCharArray()) {
+
 			if (!map.containsKey(c))
 				return false;
 
@@ -44,6 +45,7 @@ public class AnagramCheck {
 		return Arrays.equals(a, b);
 	}
 
+	// using without methods
 	static boolean isAnagram(String s1, String s2) {
 
 		s1 = s1.toLowerCase();
@@ -59,8 +61,8 @@ public class AnagramCheck {
 			count[s2.charAt(i) - 'a']--;
 		}
 
-		for (int i : count)
-			if (i != 0)
+		for (int n : count)
+			if (n != 0)
 				return false;
 
 		return true;
@@ -74,6 +76,6 @@ public class AnagramCheck {
 
 		System.out.println("HashMap : " + isAnagram1(s1, s2));
 		System.out.println("Sort : " + isAnagram2(s1, s2));
-		System.out.println("Array : " + isAnagram(s1, s2));
+		System.out.println("Methods : " + isAnagram(s1, s2));
 	}
 }

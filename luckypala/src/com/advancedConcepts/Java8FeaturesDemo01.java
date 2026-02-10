@@ -5,7 +5,7 @@ interface Intr1 {
 	int method1(int a, int b);
 }
 
-public class Java8fDemo01 {
+public class Java8FeaturesDemo01 {
 	public static void main(String[] args) {
 		System.out.println("main method started");
 
