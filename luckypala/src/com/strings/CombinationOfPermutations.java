@@ -1,0 +1,31 @@
+package com.strings;
+
+public class CombinationOfPermutations {
+
+	static void permutation(String str, String ans) {
+		if (str.length() == 0) {
+			System.out.println(ans);
+			return;
+		}
+
+		for (int i = 0; i < str.length(); i++) {
+			char ch = str.charAt(i);
+
+			String left = str.substring(0, i);
+			String right = str.substring(i + 1);
+
+			String remaining = left + right;
+
+			permutation(remaining, ans + ch);
+		}
+	}
+
+	public static void main(String[] args) {
+
+		String s = "abc";
+
+		System.out.println("==== Combination of Permutations ====");
+		permutation(s, "");
+	}
+
+}

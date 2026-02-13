@@ -1,4 +1,4 @@
-package com.collections;
+package com.collectionsFramework;
 
 public class ArraysObject {
 	public static void main(String[] args) {
@@ -9,5 +9,6 @@ public class ArraysObject {
 		for (Object obj : arr) {
 			System.out.println(obj);
 		}
+
 	}
 }
