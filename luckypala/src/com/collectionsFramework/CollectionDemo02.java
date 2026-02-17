@@ -7,6 +7,8 @@ public class CollectionDemo02 {
 	public static void main(String[] args) {
 		System.out.println("main method started");
 
+		Collection<String> staff = new ArrayList<>();
+
 		Collection<String> boys = new ArrayList<>();
 
 		boys.add("Lucky");
@@ -35,7 +37,22 @@ public class CollectionDemo02 {
 		students.addAll(boys);
 		students.addAll(girls);
 
+		boys.clear();
+
 		System.out.println("======= Students =========");
 		System.out.println(students);
+		System.out.println(boys);
+		students.add("Srikanth");
+
+		System.out.println("------------------------");
+		System.out.println(students.contains("Lucky"));
+		System.out.println(students.contains("srikant"));
+
+		System.out.println(students.containsAll(boys));
+
+		System.out.println(students.containsAll(staff));// true
+		staff.add("Lucky");
+		staff.add("Srikanth");
+		System.out.println(students.containsAll(staff));// true
 	}
 }

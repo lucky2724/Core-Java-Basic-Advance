@@ -17,7 +17,7 @@ public class CollectionsDemo09 {
 		veggies.add("Banana");
 		veggies.add("Orange");
 
-		System.out.println(veggies.get(2));
+//		System.out.println(veggies.get(2));
 
 		List<String> fruits = new ArrayList<>();
 
@@ -28,6 +28,9 @@ public class CollectionsDemo09 {
 		fruits.add("Banana");
 
 		veggies.retainAll(fruits);
+
+		System.out.println(fruits);
+		System.out.println(veggies);
 
 		System.out.println("-----------Using for loop -----------------");
 
