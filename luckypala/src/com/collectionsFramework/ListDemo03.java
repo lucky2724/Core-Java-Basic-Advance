@@ -13,7 +13,11 @@ public class ListDemo03 {
 		names.add("SKY");
 		names.add(1, "Ishan");
 		names.add(2, "Tilak");
+		
+		
+		
 		names.add(0, "Abhishek");
+		
 		names.add(0, "Hardhik");
 		names.add(4, "Dube");
 		names.add("Washinton");
