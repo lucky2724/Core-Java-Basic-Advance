@@ -28,14 +28,14 @@ public class CollectionsDemo14 {
 		// Comparble
 
 		System.out.println(empList); // Looks Clumsy
-		System.out.println("------------------------");
+		System.out.println("----------------------------------------------");
 		for (Employee5 emp : empList) {
 			System.out.println(emp);
 		}
 
 		Collections.sort(empList);
 		// sort based on age
-		System.out.println("------------------------");
+		System.out.println("----------------------------------------------");
 		for (Employee5 emp : empList) {
 			System.out.println(emp);
 		}

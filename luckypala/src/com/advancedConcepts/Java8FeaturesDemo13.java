@@ -1,5 +1,6 @@
 package com.advancedConcepts;
 
+import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
 
@@ -47,12 +48,18 @@ public class Java8FeaturesDemo13 {
 		Student[] s = { st, st1, st2, st3 };
 
 		System.out.println("-----------------------------------");
+
+		Consumer<Student> c1 = (student1) -> {
+
+			System.out.println("Name : " + student1.name);
+			System.out.println("Marks : " + student1.marks);
+			System.out.println("Grade : " + f1.apply(student1));
+			System.out.println("-----------------------------------");
+		};
+
 		for (Student stu : s) {
 			if (p1.test(stu)) {
-				System.out.println("Name : " + stu.name);
-				System.out.println("Marks : " + stu.marks);
-				System.out.println("Grade : " + f1.apply(stu));
-				System.out.println("-----------------------------------");
+				c1.accept(stu);
 			}
 		}
 

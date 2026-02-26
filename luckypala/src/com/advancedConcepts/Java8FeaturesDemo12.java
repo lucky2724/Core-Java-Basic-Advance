@@ -14,5 +14,7 @@ public class Java8FeaturesDemo12 {
 
 		Function<String, String> f3 = (s) -> s.toUpperCase();
 		System.out.println(f3.apply("Srikanth Java"));
+		
+		
 	}
 }
