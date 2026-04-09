@@ -6,6 +6,10 @@ public class UsingRunnable implements Runnable {
 	public void run() {
 		System.out.println("run method started");
 
+		Thread.currentThread().setName("Show Thread !!!!");
+		System.out.println(Thread.currentThread().getName());
+		System.out.println(Thread.currentThread());
+
 		for (int i = 0; i <= 20; i++) {
 			System.out.println("run : " + i);
 		}
@@ -21,6 +25,11 @@ public class UsingRunnable implements Runnable {
 
 		Thread t1 = new Thread(t);
 		t1.start();
+
+		Thread.currentThread().setName("Main Thread !!!!!!!!!!!!!!!!!");
+		System.out.println(Thread.currentThread().getName());
+		System.out.println(Thread.currentThread());
+
 
 		for (int i = 0; i <= 20; i++) {
 			System.out.println("main : " + i);
