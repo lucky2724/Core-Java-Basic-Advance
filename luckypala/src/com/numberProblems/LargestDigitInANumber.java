@@ -1,4 +1,4 @@
-package NumberProblems;
+package com.numberProblems;
 
 public class LargestDigitInANumber {
 	static int largestDigit(int n) {

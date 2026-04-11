@@ -1,4 +1,4 @@
-package NumberProblems;
+package com.numberProblems;
 
 public class PerfectNum {
 	static boolean isPerfect(int n) {

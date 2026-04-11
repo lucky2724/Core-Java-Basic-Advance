@@ -1,4 +1,4 @@
-package NumberProblems;
+package com.numberProblems;
 
 public class GCDof2Nums {
 	static int gcd(int n1, int n2) {

@@ -1,4 +1,4 @@
-package NumberProblems;
+package com.numberProblems;
 
 public class CheckForPrimeNumber {
 	static boolean isPrime(int n) {

@@ -1,4 +1,4 @@
-package NumberProblems;
+package com.numberProblems;
 
 public class LCMof2Nums {
 	static int lcm(int n1, int n2) {

@@ -1,4 +1,4 @@
-package NumberProblems;
+package com.numberProblems;
 
 public class ReverseANumber {
 	static int reverseNum(int n) {

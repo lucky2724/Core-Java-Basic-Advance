@@ -1,4 +1,4 @@
-package NumberProblems;
+package com.numberProblems;
 
 public class CountOddDigitsInGivenNumber {
 	static int CountOddDigits(int n) {

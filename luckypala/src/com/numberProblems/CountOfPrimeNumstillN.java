@@ -1,4 +1,4 @@
-package NumberProblems;
+package com.numberProblems;
 
 public class CountOfPrimeNumstillN {
 	static boolean isPrime(int n) {

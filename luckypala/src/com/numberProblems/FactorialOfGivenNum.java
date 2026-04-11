@@ -1,4 +1,4 @@
-package NumberProblems;
+package com.numberProblems;
 
 public class FactorialOfGivenNum {
 	static long factorial(int n) {

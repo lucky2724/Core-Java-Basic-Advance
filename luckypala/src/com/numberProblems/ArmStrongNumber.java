@@ -1,4 +1,4 @@
-package NumberProblems;
+package com.numberProblems;
 
 public class ArmStrongNumber {
 	static boolean isArmstrong(int n) {
